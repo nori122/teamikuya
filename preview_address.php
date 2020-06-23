@@ -78,7 +78,7 @@ javascript 要素
         let table = document.createElement("table");
 
         // 表に2次元配列の要素を格納
-        for (i = 0; i < js_array.length; i++) {
+        for (i = 0; i < 30; i++) {
             rows.push(table.insertRow(-1)); // 行の追加
             for (j = 0; j < js_array[0].length; j++) {
                 cell = rows[i].insertCell(-1);

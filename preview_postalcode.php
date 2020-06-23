@@ -56,6 +56,10 @@ HTML 要素
     <a href='upload_postalcode.php'><button>mySQLにアップロード</button></a>
     <p>プレビュー</p>
     <div id="table"></div>
+    <div id="more" style="display:none;">
+        <p>この先14万レコード続くので流石に長すぎて...</p>
+        <img src='img/restrict.gif' alt=''>
+    </div>
 </body>
 
 </html>
@@ -78,7 +82,7 @@ javascript 要素
         let table = document.createElement("table");
 
         // 表に2次元配列の要素を格納
-        for (i = 0; i < js_array.length; i++) {
+        for (i = 0; i < 30; i++) {
             rows.push(table.insertRow(-1)); // 行の追加
             for (j = 0; j < js_array[0].length; j++) {
                 cell = rows[i].insertCell(-1);
@@ -94,4 +98,6 @@ javascript 要素
         // 表の動的作成
         makeTable(js_array, "table");
     };
+    //読み込みが終わったら#moreの表示をnoneからblockに変更
+    document.getElementById("more").style.display = "block";
 </script>

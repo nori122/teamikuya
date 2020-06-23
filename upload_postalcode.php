@@ -38,16 +38,16 @@ $sql = "";
 // `.=`は後ろに文字列を追加する，の意味
 foreach ($newAry as $record) {
 
-    $sql .= "INSERT INTO `tel_table`(`tel_id`, `area_tel`, `area1`, `area2`) VALUES (";
+    $sql .= "INSERT INTO `postalcode_table`(`address_id`, `postal_code`) VALUES (";
     $sql .= "{$record[0]},";
-    $sql .= "{$record[1]},";
-    $sql .= "'{$record[2]}',";
-    $sql .= "'{$record[3]}'";
+    $sql .= "{$record[1]}";
     $sql .= ");";
 }
 
 
 $bulk_sql = $sql;
+// echo ($bulk_sql);
+// exit();
 
 // SQL準備&実行
 $stmt = $pdo->prepare($bulk_sql);
