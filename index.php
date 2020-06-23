@@ -13,13 +13,24 @@ HTML 要素
 
 <body>
 
-
-    <form action="preview.php" method="post" enctype="multipart/form-data">
-        CSVファイル：<br />
+    <form action="preview_address.php" method="post" enctype="multipart/form-data">
+        住所マスタ：<br />
         <input type="file" name="csvfile" size="30" /><br />
         <input type="submit" value="アップロード" />
     </form>
+    <hr>
+    <form action="preview_postalcode.php" method="post" enctype="multipart/form-data">
+        郵便番号マスタ：<br />
+        <input type="file" name="csvfile" size="30" /><br />
+        <input type="submit" value="アップロード" />
+    </form>
+    <hr>
 
+    <form action="preview_tel.php" method="post" enctype="multipart/form-data">
+        市外局番マスタ：<br />
+        <input type="file" name="csvfile" size="30" /><br />
+        <input type="submit" value="アップロード" />
+    </form>
 
 </body>
 
