@@ -31,7 +31,12 @@ HTML 要素
         <input type="file" name="csvfile" size="30" /><br />
         <input type="submit" value="プレビューを見る" />
     </form>
-    <!-- <img src='img/restrict.gif' alt=''> -->
+    <hr>
+    <form action="preview_new.php" method="post" enctype="multipart/form-data">
+        NEW：<br />
+        <input type="file" name="csvfile" size="30" /><br />
+        <input type="submit" value="プレビューを見る" />
+    </form>
 
 </body>
 
