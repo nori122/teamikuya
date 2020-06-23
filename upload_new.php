@@ -6,6 +6,7 @@ session_start();
 $newAry = $_SESSION["newAry"];
 $filepath = $_SESSION["filepath"];
 $filename = $_SESSION["filename"];
+$tablename = $_SESSION["tablename"];
 // var_dump($newAry);
 // var_dump($filepath);
 // exit();
@@ -36,7 +37,7 @@ $pdo = connect_to_db();
 
 
 // データ取得SQLの作成
-$sql = 'load data infile "/Applications/XAMPP/xamppfiles/htdocs/teamikuya/csvdata/' . $filename . '" into table postalcode_table fields terminated by ",";';
+$sql = 'load data infile "/Applications/XAMPP/xamppfiles/htdocs/teamikuya/csvdata/' . $filename . '" into table ' . $tablename . ' fields terminated by ",";';
 // echo ($sql);
 // exit();
 
