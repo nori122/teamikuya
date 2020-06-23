@@ -13,11 +13,11 @@ HTML 要素
 
 <body>
 
-    <form action="preview_address.php" method="post" enctype="multipart/form-data">
+    <!-- <form action="preview_address.php" method="post" enctype="multipart/form-data">
         住所マスタ：<br>
         <input type="file" name="csvfile" size="30" /><br>
         <input type="submit" value="プレビューを見る" />
-    </form>
+    </form> -->
     <!-- <hr>
     <form action="preview_postalcode.php" method="post" enctype="multipart/form-data">
         郵便番号マスタ：<br>
@@ -31,7 +31,7 @@ HTML 要素
         <input type="file" name="csvfile" size="30" /><br>
         <input type="submit" value="プレビューを見る" />
     </form> -->
-    <hr>
+    <!-- <hr> -->
     <form action="preview_new.php" method="post" enctype="multipart/form-data">
         任意のテーブル：<br>
         <input type="file" name="csvfile" size="30" /><br>
